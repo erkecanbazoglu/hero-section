@@ -1,4 +1,4 @@
-# Product Card Component
+# Accordion Component
 
 ## Table of contents
 
@@ -10,11 +10,11 @@
 ## Overview
 
 Components:
-Product Card Component
+Accordion Component
 
 ### Screenshot
 
-![Design preview](./design/desktop-preview.jpg)
+![Design preview](./design/desktop-preview.png)
 
 ### Built with
 
