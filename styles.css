@@ -14,97 +14,103 @@ body {
 }
 
 .container {
+  width: 100vw;
   height: 100vh;
-  background-color: #eee;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.6)
+    ),
+    center / cover no-repeat url("./hero.jpg");
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.component {
-  margin: 9.6rem 4.8rem;
-  padding: 2.4rem 2.4rem;
+.navbar {
+  width: 120rem;
+  padding: 4.8rem 0rem;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+
   display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.card {
-  overflow: hidden;
+.navbar-text {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
-.question-box {
-  background-color: #fff;
-  width: 72rem;
-  padding: 2.4rem;
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+.hero-section {
+  width: 120rem;
+  margin: 0rem 0rem;
 
   display: grid;
-  grid-template-columns: 3rem 1fr 3rem;
-  column-gap: 2.4rem;
-  row-gap: 2.4rem;
+  grid-template-columns: 4fr 6fr;
 }
 
-.number {
-  color: #bbb;
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-.question {
-  color: #333;
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-.down-icon {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-.hidden-box {
-  grid-column: 2;
-
-  display: none;
-}
-
-.description {
-  color: #333;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.list {
-  margin-left: 1.8rem;
-}
-
-.list-item {
-  color: #777;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.6;
-}
-
-.nav-open.question-box {
-  border-top: 3px solid #087f5b;
-}
-
-.nav-open .hidden-box {
+.hero-text {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
 }
 
-.nav-open .number {
-  color: #087f5b;
+.hero-header {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
 }
 
-.nav-open .question {
-  color: #087f5b;
+.hero-description {
+  color: #eee;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 3.6rem;
 }
 
-.nav-open .down-icon {
-  stroke: #087f5b;
+.hero-button:link,
+.hero-button:visited {
+  width: max-content;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: rgb(212, 96, 18);
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.2rem 2.4rem;
+  border-radius: 11px;
+  margin-bottom: 2.4rem;
+}
+
+.hero-button:hover,
+.hero-button:active {
+  background-color: rgb(202, 93, 20);
+}
+
+@media (max-width: 1300px) {
+  .navbar {
+    width: 100rem;
+  }
+
+  .hero-section {
+    width: 100rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    width: 80rem;
+  }
+
+  .hero-section {
+    width: 80rem;
+  }
 }

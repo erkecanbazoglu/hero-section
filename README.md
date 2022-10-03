@@ -1,4 +1,4 @@
-# Accordion Component
+# Hero Section
 
 ## Table of contents
 
@@ -9,8 +9,8 @@
 
 ## Overview
 
-Components:
-Accordion Component
+Section:
+Hero Section
 
 ### Screenshot
 
